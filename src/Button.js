@@ -10,8 +10,8 @@ export default styled.button`
   border-radius: 100px;
   border: 1px solid
     ${styledMap({
-      default: "#1DA1F2"
-    })};
+    default: "#1DA1F2"
+  })};
   background: ${buttonColor};
 
   line-height: 14px;

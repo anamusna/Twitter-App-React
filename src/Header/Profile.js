@@ -1,29 +1,23 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import avatar from "../img/avatar.png";
+import styled from "styled-components";
 
-const StProfile = styled.button`
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-`;
 
 const AvaterStyle = styled.img`
-  width: 32px;
-  height: 32px;
-  margin: 0 16px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 `;
 
+
 class Profile extends Component {
+
   render() {
     return (
-      <StProfile>
-        <AvaterStyle src={avatar} alt="" />
-      </StProfile>
+
+      <AvaterStyle src={avatar} alt="profile" />
+
     );
   }
 }
-
 export default Profile;
+

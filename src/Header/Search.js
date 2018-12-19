@@ -25,7 +25,7 @@ const SearchForm = styled.form`
 
 export default () => (
   <SearchForm action="">
-    <input type="text" placeholder="Search Twitter" />
+    <input type="text" placeholder="Search" />
     <button>
       <img src={magnifier} alt="" />
     </button>

@@ -6,13 +6,17 @@ import "flexboxgrid2";
 import HeaderNavigation from "./HeaderNavigation";
 import StatisticsBar from "./StatisticsBar";
 import MainContent from "./MainContent";
-import profileBg from "./img/profile–image.png";
+import sport from "./img/sport.jpg";
 import avatarMain from "./img/avatar.png";
 import twitterIcn from "./img/icon-twitter16.png";
 
 const ProfileBG = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
 `;
 
 class App extends Component {
@@ -21,17 +25,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="row center-xs">
-          <Helmet>
-            <title>Twitter</title>
-            <meta name="theme-color" content="#1da1f2" />
-            <link rel="icon" type="image/png" href={twitterIcn} />
-          </Helmet>
-
+        <div className="App">
           <Redirect from="/" to={`/${this.state.nickname}`} />
-
           <HeaderNavigation user={this.state.nickname} />
-          <ProfileBG src={profileBg} />
+          <ProfileBG src={sport} />
           <StatisticsBar
             avatar={avatarMain}
             tweets={8058}

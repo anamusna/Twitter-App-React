@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import User from "./User";
-import appleInsiderAvatar from "../img/user-avatar.png";
-import creodeAvatar from "../img/user-avatar2.png";
 import avatar from "../img/avatar.png";
 import peopleInc from "../img/icon-people.svg";
 
